@@ -1,0 +1,23 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grant Application Completeness Assistant</title>
+</head>
+<body>
+    <h1>Grant Application Completeness Assistant</h1>
+    <p>Structured specification for building a Grant Application Completeness Assistant.</p>
+
+    <h2>Master Prompt</h2>
+    <pre id="prompt"></pre>
+
+    <script>
+        fetch('./GRANT_APPLICATION_COMPLETENESS_ASSISTANT_MASTER_PROMPT.md')
+            .then(response => response.text())
+            .then(text => {
+                document.getElementById('prompt').textContent = text;
+            });
+    </script>
+</body>
+</html>
